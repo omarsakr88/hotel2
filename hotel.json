@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "d2cb9133-b1c6-4e6d-9c57-9422a9b87045",
+		"name": "hotel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38360164"
+	},
+	"item": [
+		{
+			"name": "newRoom",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/newRoom?name=omar&price=3500&number=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"newRoom"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "omar"
+						},
+						{
+							"key": "price",
+							"value": "3500"
+						},
+						{
+							"key": "number",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printRooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printRooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printRooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyRoom",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyRoom?name=aly&number=30&price=6000&ID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyRoom"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "aly"
+						},
+						{
+							"key": "number",
+							"value": "30"
+						},
+						{
+							"key": "price",
+							"value": "6000"
+						},
+						{
+							"key": "ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
