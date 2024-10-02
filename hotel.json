@@ -94,6 +94,139 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "removeRoom",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeRoom?ID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeRoom"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newGuest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/newGuest?name=moniqa&address=12st",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"newGuest"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "moniqa"
+						},
+						{
+							"key": "address",
+							"value": "12st"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newReservatin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/newReservation?startdate=02/11/2024&enddate=03/11/2024&price=500&guestID=3&roomID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"newReservation"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": "02/11/2024"
+						},
+						{
+							"key": "enddate",
+							"value": "03/11/2024"
+						},
+						{
+							"key": "price",
+							"value": "500"
+						},
+						{
+							"key": "guestID",
+							"value": "3"
+						},
+						{
+							"key": "roomID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printGuests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printGuests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printGuests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printReservation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printReservations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printReservations"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

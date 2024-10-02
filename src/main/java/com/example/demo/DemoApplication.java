@@ -3,6 +3,7 @@ package com.example.demo;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -56,9 +57,6 @@ public class DemoApplication {
 
     @GetMapping("/removeRoom")
     public String removeRoom(
-            @RequestParam(value = "name") String name,
-            @RequestParam(value = "number") Integer number,
-            @RequestParam(value = "price") Double price,
             @RequestParam(value = "ID") Integer id
     ) {
 
@@ -75,7 +73,7 @@ public class DemoApplication {
     public String newGuest(
             @RequestParam(value = "name") String name,
             @RequestParam(value = "address") String address
-    ) {
+    )   {
         Guest guest = new Guest();
         guest.assignNewId();
         guest.setName(name);
@@ -146,8 +144,8 @@ public class DemoApplication {
 
     @GetMapping("/modifyReservation")
     public String modifyReservation(
-            @RequestParam(value = "start date") Date startDate,
-            @RequestParam(value = "end date") Date endDate,
+            @RequestParam(value = "start date") @DateTimeFormat(pattern = "dd/MM/yyyy") Date startDate,
+            @RequestParam(value = "end date") @DateTimeFormat(pattern = "dd/MM/yyyy") Date endDate,
             @RequestParam(value = "price") Double price,
             @RequestParam(value = "guestID") Integer guestId,
             @RequestParam(value = "roomID") Integer roomId,
