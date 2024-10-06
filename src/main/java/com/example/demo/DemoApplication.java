@@ -100,8 +100,6 @@ public class DemoApplication {
 
     @GetMapping("/removeGuest")
     public String removeGuest(
-            @RequestParam(value = "name") String name,
-            @RequestParam(value = "address") String address,
             @RequestParam(value = "ID") Integer id
     ) {
 
@@ -116,8 +114,8 @@ public class DemoApplication {
 
     @GetMapping("/newReservation")
     public String newReservation(
-            @RequestParam(value = "startdate") Date startDate,
-            @RequestParam(value = "enddate") Date endDate,
+            @RequestParam(value = "startdate") @DateTimeFormat(pattern = "dd/MM/yyyy") Date startDate,
+            @RequestParam(value = "enddate") @DateTimeFormat(pattern = "dd/MM/yyyy") Date endDate,
             @RequestParam(value = "price") Double price,
             @RequestParam(value = "guestID") Integer guestId,
             @RequestParam(value = "roomID") Integer roomId
@@ -144,8 +142,8 @@ public class DemoApplication {
 
     @GetMapping("/modifyReservation")
     public String modifyReservation(
-            @RequestParam(value = "start date") @DateTimeFormat(pattern = "dd/MM/yyyy") Date startDate,
-            @RequestParam(value = "end date") @DateTimeFormat(pattern = "dd/MM/yyyy") Date endDate,
+            @RequestParam(value = "startdate") @DateTimeFormat(pattern = "dd/MM/yyyy") Date startDate,
+            @RequestParam(value = "enddate") @DateTimeFormat(pattern = "dd/MM/yyyy") Date endDate,
             @RequestParam(value = "price") Double price,
             @RequestParam(value = "guestID") Integer guestId,
             @RequestParam(value = "roomID") Integer roomId,
@@ -157,19 +155,25 @@ public class DemoApplication {
         if (reservation == null) {
             return "reservation not found";
         }
+        Guest guest = getGuest(guestId);
+        if (guest == null) {
+            return "guest not found";
+        }
+
+        Room room = getRoom(roomId);
+        if (room == null) {
+            return "room not found";
+        }
         reservation.setStartDate(startDate);
         reservation.setEndDate(endDate);
         reservation.setPrice(price);
+        reservation.setGuest(guest);
+        reservation.setRoom(room);
         return "success";
     }
 
     @GetMapping("/removeReservation")
     public String removeReservation(
-            @RequestParam(value = "start date") Date startDate,
-            @RequestParam(value = "end date") Date endDate,
-            @RequestParam(value = "price") Double price,
-            @RequestParam(value = "guestID") Integer guestId,
-            @RequestParam(value = "roomID") Integer roomId,
             @RequestParam(value = "ID") Integer id
     ) {
 

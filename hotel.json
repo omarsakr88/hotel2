@@ -40,25 +40,6 @@
 			"response": []
 		},
 		{
-			"name": "printRooms",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/printRooms",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"printRooms"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "modifyRoom",
 			"request": {
 				"method": "GET",
@@ -121,6 +102,25 @@
 			"response": []
 		},
 		{
+			"name": "printRooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printRooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printRooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "newGuest",
 			"request": {
 				"method": "GET",
@@ -150,7 +150,42 @@
 			"response": []
 		},
 		{
-			"name": "newReservatin",
+			"name": "renameGuest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "removeGuest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "printGuests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printGuests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printGuests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newReservation",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -191,21 +226,18 @@
 			"response": []
 		},
 		{
-			"name": "printGuests",
+			"name": "modifyReservation",
 			"request": {
 				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/printGuests",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"printGuests"
-					]
-				}
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "removeResevation",
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		},
