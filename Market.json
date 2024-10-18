@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "0c9b5037-ac7d-4508-bc7b-57be9d512c61",
+		"name": "Market",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38360164"
+	},
+	"item": [
+		{
+			"name": "addCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addCustomer?Name=omar&Address=14s",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addCustomer"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "omar"
+						},
+						{
+							"key": "Address",
+							"value": "14s"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyCustomer?Name=aly&Address=10l&ID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyCustomer"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "aly"
+						},
+						{
+							"key": "Address",
+							"value": "10l"
+						},
+						{
+							"key": "ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeCustomer?ID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeCustomer"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printCustomers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printCustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addOrder?customerId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addOrder"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printOrders"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTotal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getTotal?orderId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getTotal"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addItem?Name=pepsi&Price=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addItem"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "pepsi"
+						},
+						{
+							"key": "Price",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyItem?Name=redBull&Price=80&ID=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyItem"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "redBull"
+						},
+						{
+							"key": "Price",
+							"value": "80"
+						},
+						{
+							"key": "ID",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeItem?ID=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeItem"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItemLine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addItemLine?Count=10&itemId=10&orderId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addItemLine"
+					],
+					"query": [
+						{
+							"key": "Count",
+							"value": "10"
+						},
+						{
+							"key": "itemId",
+							"value": "10"
+						},
+						{
+							"key": "orderId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyitemLine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyItemLine?Count=50&orderId=2&itemId=3&itemLineId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyItemLine"
+					],
+					"query": [
+						{
+							"key": "Count",
+							"value": "50"
+						},
+						{
+							"key": "orderId",
+							"value": "2"
+						},
+						{
+							"key": "itemId",
+							"value": "3"
+						},
+						{
+							"key": "itemLineId",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeItemLine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeItemLine?ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeItemLine"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printItemLines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printItemLines?orderId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printItemLines"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
