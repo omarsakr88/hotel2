@@ -1,0 +1,592 @@
+{
+	"info": {
+		"_postman_id": "e17879f5-4add-4990-a752-45e1bb3a12f3",
+		"name": "School",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38360164"
+	},
+	"item": [
+		{
+			"name": "addStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addStudent?Name=omar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addStudent"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "omar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyStudent?Name=marwa&ID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyStudent"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "marwa"
+						},
+						{
+							"key": "ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeStudent?ID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeStudent"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printStudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSubject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addSubject?Name=english",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addSubject"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "english"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifySubject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifySubject?Name=maths&ID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifySubject"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "maths"
+						},
+						{
+							"key": "ID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printSubjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printSubjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printSubjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeSubject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeSubject?ID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeSubject"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTeacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addTeacher?Name=aly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addTeacher"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "aly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printTeachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printTeachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printTeachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyTeacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyTeacher?Name=sakr&ID=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyTeacher"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "sakr"
+						},
+						{
+							"key": "ID",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTeacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeTeacher?ID=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeTeacher"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addDegree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addDegree?Score=150&StudentID=1&SubjectID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addDegree"
+					],
+					"query": [
+						{
+							"key": "Score",
+							"value": "150"
+						},
+						{
+							"key": "StudentID",
+							"value": "1"
+						},
+						{
+							"key": "SubjectID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChangeDegree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/changeDegree?Score=40&StudentID&DegreeID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"changeDegree"
+					],
+					"query": [
+						{
+							"key": "Score",
+							"value": "40"
+						},
+						{
+							"key": "StudentID",
+							"value": null
+						},
+						{
+							"key": "DegreeID",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeDegree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeDegree?StudentID&DegreeID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeDegree"
+					],
+					"query": [
+						{
+							"key": "StudentID",
+							"value": null
+						},
+						{
+							"key": "DegreeID",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printDegrees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printDergrees?StudentID=1&SubjectID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printDergrees"
+					],
+					"query": [
+						{
+							"key": "StudentID",
+							"value": "1"
+						},
+						{
+							"key": "SubjectID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudentClass",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addStudentclass?Name=floor one&TeacherID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addStudentclass"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "floor one"
+						},
+						{
+							"key": "TeacherID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyStudentClass",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/modifyStudentclass?Name=floor two&TeacherID=1&ID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modifyStudentclass"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "floor two"
+						},
+						{
+							"key": "TeacherID",
+							"value": "1"
+						},
+						{
+							"key": "ID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeStudentClass",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeStudentclass?ID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeStudentclass"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printStudentClasses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/printStudentClasses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"printStudentClasses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudentToClass",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addStudentToClass?StudentClassID=3&StudentID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addStudentToClass"
+					],
+					"query": [
+						{
+							"key": "StudentClassID",
+							"value": "3"
+						},
+						{
+							"key": "StudentID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeStudentFromClass",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/removeStudentfromClass?StudentClassID=3&StudentID=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeStudentfromClass"
+					],
+					"query": [
+						{
+							"key": "StudentClassID",
+							"value": "3"
+						},
+						{
+							"key": "StudentID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
